@@ -1,0 +1,10 @@
+th {
+    color: red;
+    font-size: 2.5rem;
+}
+table {
+    color: blue;
+}
+td:nth-child(even), th:nth-child(even) {
+    background-color: #D6EEEE;
+  }

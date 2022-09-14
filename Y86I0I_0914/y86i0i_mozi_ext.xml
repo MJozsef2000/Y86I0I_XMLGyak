@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mozi>
+    <film id="txn_nxm_2jb" mufaj="horror">
+        <rendezo id="nzk_4xm_2jb" nev="alex"/>
+        <szinesz id="u5q_4xm_2jb">
+            <gyerekszinesz id="jkl_4xm_2jb" nev="Holy"/>
+            <musicalszinesz id="xyz_4xm_2jb" nev="alex"/>
+            <szinkronszinesz id="def_4xm_2jb" nev="Madyson_Ivy"/>
+        </szinesz>
+        <iro id="trv_4xm_2jb"/>
+        <producer id="abc_4xm_2jb" nev="Alex"/>
+        <dramaturg id="def_4xm_2jb" nev="Jane"/>
+        <operator id="ghi_4xm_2jb"/>
+    </film>
+    <film id="123_nxm_2jb" mufaj="comedy">
+        <rendezo id="456_4xm_2jb" nev="Paul"/>
+        <szinesz id="hgf_4xm_2jb" nev="John_Doe">
+            <gyerekszinesz> Jeremy </gyerekszinesz>
+            <musicalszinesz> Chris </musicalszinesz>
+            <szinkronszinesz> Aaron </szinkronszinesz>
+        </szinesz>
+        <iro id="zui_4xm_2jb"/>
+        <producer id="bnm_4xm_2jb" nev="Clarkson"/>
+        <dramaturg id="yxc_4xm_2jb" nev="Winston"/>
+        <operator id="asd_4xm_2jb"/>
+    </film>
+</mozi>
