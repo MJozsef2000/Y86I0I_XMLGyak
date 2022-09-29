@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE MJ_adatbazis SYSTEM "MJ_adatbazis.dtd">
+ <MJ_adatbazis>
+  <dolgozo kod="d001">
+    <nev>Axel Rose</nev>
+    <fizetes>130000</fizetes>
+  </dolgozo>
+  <dolgozo kod="d002">
+    <nev>George Humphrey</nev>
+    <fizetes>334000</fizetes>
+  </dolgozo>
+  <dolgozo kod="d003">
+    <nev>Aaron Steel</nev>
+    <fizetes>225000</fizetes>
+  </dolgozo>
+  <dolgozo kod="d004">
+    <nev>John Doe</nev>
+    <fizetes>735000</fizetes>
+  </dolgozo>
+ </MJ_adatbazis>
