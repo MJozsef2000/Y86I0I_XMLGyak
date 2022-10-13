@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vendeglatas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNameSpaceSchemaLocation="XMLSchemaY86I0I.xsd">
+
+    <!-- Éttermek -->
+    <etterem ekod="e1">
+        <nev>Trófea</nev>
+        <cim>
+            <varos>Budapest</varos>
+            <utca>Visegradi</utca>
+            <hazszam>13</hazszam>
+        </cim>
+    </etterem>
+
+    <etterem ekod="e2">
+        <nev>Bitang Joe</nev>
+        <cim>
+            <varos>Miskolc</varos>
+            <utca>Kandia</utca>
+            <hazszam>24</hazszam>
+        </cim>
+    </etterem>
+
+    <etterem ekod="e3">
+        <nev>Creppy Palacsintaház</nev>
+        <cim>
+            <varos>Miskolc</varos>
+            <utca>Mélyvölgy</utca>
+            <hazszam>212</hazszam>
+        </cim>
+    </etterem>
+
+    <!-- Főszakácsok -->
+    <foszakacs fkod="f1" e_f="e1">
+        <nev>Havas Péter</nev>
+        <eletkor>35</eletkor>
+        <vegzettseg>Szakközépiskola</vegzettseg>
+        <vegzettseg>Institute Paul Bocuse</vegzettseg>
+    </foszakacs>
+
+    <foszakacs fkod="f2" e_f="e2">
+        <nev>Gianni Annoni</nev>
+        <eletkor>51</eletkor>
+        <vegzettseg>Egyetem</vegzettseg>
+        <vegzettseg>Gordon Ramsey Institute</vegzettseg>
+    </foszakacs>
+
+    <foszakacs fkod="f3" e_f="e3">
+        <nev>Benke László</nev>
+        <eletkor>69</eletkor>
+        <vegzettseg>Gimnázium</vegzettseg>
+        <vegzettseg>Egyetem</vegzettseg>
+    </foszakacs>
+
+    <!-- Szakácsok -->
+    <szakacs szkod="sz1" e_sz="e1">
+        <nev>Ötlet Elek</nev>
+        <reszleg>Saucier</reszleg>
+        <vegzettseg>Szakközépiskola</vegzettseg>
+        <vegzettseg>La Gordon Blen</vegzettseg>
+        <vegzettseg>Gordon Ramsey Institute</vegzettseg>
+    </szakacs>
+
+    <szakacs szkod="sz2" e_sz="e2">
+        <nev>Jogo Bella</nev>
+        <reszleg>Toaster</reszleg>
+        <vegzettseg>Szakközépiskola</vegzettseg>
+        <vegzettseg>Laci bácsi Institute</vegzettseg>
+    </szakacs>
+
+    <szakacs szkod="sz3" e_sz="e2">
+        <nev>Sütő Endre</nev>
+        <reszleg>Fryer</reszleg>
+        <vegzettseg>Szakközépiskola</vegzettseg>
+        <vegzettseg>La Gordon Blen</vegzettseg>
+    </szakacs>
+
+    <szakacs szkod="sz4" e_sz="e3">
+        <nev>Késes János</nev>
+        <reszleg>Chopper</reszleg>
+        <vegzettseg>Szakközépiskola</vegzettseg>
+    </szakacs>
+
+    <!-- Gyakornokok -->
+    <gyakornok gykod="gy1" e_gy="e1">
+        <nev>Bordás Dávid</nev>
+        <gyakorlat>
+            <kezdete>2021.08.26</kezdete>
+            <idotartam>2 hónap</idotartam>
+        </gyakorlat>
+        <muszak>Délelőtt</muszak>
+    </gyakornok>
+
+    <gyakornok gykod="gy2" e_gy="e2">
+        <nev>Kender Zoltán</nev>
+        <gyakorlat>
+            <kezdete>2022.04.20</kezdete>
+            <idotartam>15 hónap</idotartam>
+        </gyakorlat>
+        <muszak>Délután</muszak>
+    </gyakornok>
+
+    <gyakornok gykod="gy3" e_gy="e3">
+        <nev>Trutymó Ferenc</nev>
+        <gyakorlat>
+            <kezdete>2020.02.01</kezdete>
+            <idotartam>1 év</idotartam>
+        </gyakorlat>
+        <muszak>Délután</muszak>
+    </gyakornok>
+
+    <gyakornok gykod="gy4" e_gy="e1">
+        <nev>Szakos Máté</nev>
+        <gyakorlat>
+            <kezdete>2022.10.12</kezdete>
+            <idotartam>1 hónap</idotartam>
+        </gyakorlat>
+        <muszak>Délelőtt</muszak>
+    </gyakornok>
+
+    <!-- Vemdegek -->
+
+    <vendeg vkod="v1">
+        <nev>Csesznák Bálint</nev>
+        <eletkor>21</eletkor>
+        <cim>
+            <varos>Miskolc</varos>
+            <utca>Szemere</utca>
+            <hazszam>23</hazszam>
+        </cim>
+    </vendeg>
+
+    <vendeg vkod="v2">
+        <nev>Balla Máté</nev>
+        <eletkor>54</eletkor>
+        <cim>
+            <varos>Debrecen</varos>
+            <utca>Domokos</utca>
+            <hazszam>121</hazszam>
+        </cim>
+    </vendeg>
+
+    <vendeg vkod="v3">
+        <nev>Kiss Ádám</nev>
+        <eletkor>35</eletkor>
+        <cim>
+            <varos>Budapest</varos>
+            <utca>Kossuth Lajos</utca>
+            <hazszam>141</hazszam>
+        </cim>
+    </vendeg>
+
+    <!-- Rendelések -->
+    <rendeles e_v_e="el" e_v_v="v1">
+        <osszeg>9000</osszeg>
+        <etel>Steak</etel>
+    </rendeles>
+
+     <rendeles e_v_e="el" e_v_v="v2">
+        <osszeg>19000</osszeg>
+        <etel>Kaviár</etel>
+    </rendeles>
+
+     <rendeles e_v_e="e2" e_v_v="v3">
+        <osszeg>4500</osszeg>
+        <etel>Bableves</etel>
+    </rendeles>
+
+     <rendeles e_v_e="e3" e_v_v="v3">
+        <osszeg>6700</osszeg>
+        <etel>Bolognai Spagetti</etel>
+    </rendeles>
+
+</vendeglatas>
