@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MJ_kurzusfelvetel tanev="2022_2023 I." egyetem="ME">
+  <hallgato id="Y86I0I.ME">
+    <hnev>Miliczki Jozsef</hnev>
+    <szulev>2000-10-12</szulev>
+    <szak evf="5"> Programtervezo Informatikus </szak>
+  </hallgato>
+
+  <kurzusok>
+    <kurzus id="GEIAL331-B" nyelv="angol">
+      <kurzusnev>WEB technologiak 1</kurzusnev>
+      <kredit>5</kredit>
+      <hely>A1. 315</hely>
+      <idopont>Hetfo 8:00-9:30</idopont>
+      <oktato>Agardi Anita</oktato>
+    </kurzus>
+    <kurzus id="GEIAL315-B">
+      <kurzusnev>Vallalit Informacios Rendszerek Fejlesztese</kurzusnev>
+      <kredit>5</kredit>
+      <hely>In. 103</hely>
+      <idopont>Szerda 16:00-19:00</idopont>
+      <oktato>Dr. Sasvari Peter</oktato>
+    </kurzus>
+    <kurzus id="GEMAK234-B" jovahagyas="igen">
+      <kurzusnev>Algoritmusok es vizsgalatuk</kurzusnev>
+      <kredit>5</kredit>
+      <hely>A1. 216</hely>
+      <idopont>Kedd 14:00-17:00</idopont>
+      <oktato>Dr. Hazy Attila</oktato>
+    </kurzus>
+    <kurzus id="GEIAL332-B">
+      <kurzusnev>Adatkezeles XML kornyezetben</kurzusnev>
+      <kredit>5</kredit>
+      <hely>XXXII.</hely>
+      <idopont>Kedd 12:00-13:30</idopont>
+      <oktato>Dr. Bednarik Laszlo</oktato>
+    </kurzus>
+  </kurzusok>
+</MJ_kurzusfelvetel>
