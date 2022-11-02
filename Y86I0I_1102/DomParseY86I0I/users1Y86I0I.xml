@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<users xmlns="DOMY86I0I">
+  <user id="1">
+    <firstname>Pal</firstname>
+    <lastname>Pal</lastname>
+    <profession>Pal</profession>
+  </user>
+  <user id="2">
+    <firstname>Piroska</firstname>
+    <lastname>Piroska</lastname>
+    <profession>Piroska</profession>
+  </user>
+  <user id="3">
+    <firstname>Boros</firstname>
+    <lastname>Boros</lastname>
+    <profession>Boros</profession>
+  </user>
+</users>
