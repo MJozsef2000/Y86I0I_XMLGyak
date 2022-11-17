@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MJ_Borton xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="XMLSchemaY86I0I.xsd">
+  <!-- Személyzet -->
+  <szemelyzet SZ-A="01" SZEM_ID="100">
+    <pozicio>Takarito</pozicio>
+    <szolgalati_hely>Folyosok</szolgalati_hely>
+  </szemelyzet>
+  <szemelyzet SZ-A="02" SZEM_ID="101">
+    <pozicio>Szakacs</pozicio>
+    <szolgalati_hely>Konyha</szolgalati_hely>
+  </szemelyzet>
+  <szemelyzet SZ-A="03" SZEM_ID="102">
+    <pozicio>Bortonor</pozicio>
+    <szolgalati_hely>Borton epuletek</szolgalati_hely>
+  </szemelyzet>
+  <szemelyzet SZ-A="04" SZEM_ID="103">
+    <pozicio>Sofor</pozicio>
+    <szolgalati_hely>Kocsibejaro</szolgalati_hely>
+  </szemelyzet>
+  <szemelyzet SZ-A="05" SZEM_ID="104">
+    <pozicio>Orvos</pozicio>
+    <szolgalati_hely>Borton korhaz</szolgalati_hely>
+  </szemelyzet>
+
+<!-- Alkalmazottak általános adatai -->
+  <alkalmazott ALK_ID = "01">
+    <eletkor>34</eletkor>
+    <nev>Kis Karoly</nev>
+    <lakhely>
+      <iranyitoszam>3529</iranyitoszam>
+      <hazszam>23</hazszam>
+      <utca>Afonyas</utca>
+      <varos>Miskolc</varos>
+    </lakhely>
+  </alkalmazott>
+  <alkalmazott ALK_ID = "02">
+    <eletkor>55</eletkor>
+    <nev>Mucsi Zoltan</nev>
+    <lakhely>
+      <iranyitoszam>1032</iranyitoszam>
+      <hazszam>102</hazszam>
+      <utca>Kossuth Lajos</utca>
+      <varos>Budapest</varos>
+    </lakhely>
+  </alkalmazott>
+  <alkalmazott ALK_ID = "03">
+    <eletkor>57</eletkor>
+    <nev>Miliczki Jozsef</nev>
+    <lakhely>
+      <iranyitoszam>3012</iranyitoszam>
+      <hazszam>141</hazszam>
+      <utca>Beke</utca>
+      <varos>Győr</varos>
+    </lakhely>
+  </alkalmazott>
+  <alkalmazott ALK_ID = "04">
+    <eletkor>25</eletkor>
+    <nev>Turing Ferenc</nev>
+    <lakhely>
+      <iranyitoszam>2525</iranyitoszam>
+      <hazszam>26</hazszam>
+      <utca>Saros</utca>
+      <varos>Kecskemét</varos>
+    </lakhely>
+  </alkalmazott>
+  <alkalmazott ALK_ID = "05">
+    <eletkor>44</eletkor>
+    <nev>Eros Antonia</nev>
+    <lakhely>
+      <iranyitoszam>4412</iranyitoszam>
+      <hazszam>56</hazszam>
+      <utca>Szabadsag Ter</utca>
+      <varos>Szeged</varos>
+    </lakhely>
+  </alkalmazott>
+<!-- Alkalmazottak összekapcsolása Börtön épületekkel -->
+  <beosztas BE-A="01" BE-B="A" BE_ID="1">
+    <muszak>Esti</muszak>
+  </beosztas>
+  <beosztas BE-A="01" BE-B="B" BE_ID="2">
+    <muszak>Nappali</muszak>
+  </beosztas>
+  <beosztas BE-A="02" BE-B="C" BE_ID="3">
+    <muszak>Esti</muszak>
+  </beosztas>
+  <beosztas BE-A="03" BE-B="C" BE_ID="4">
+    <muszak>Delutanos</muszak>
+  </beosztas>
+  <beosztas BE-A="04" BE-B="A" BE_ID="5">
+    <muszak>Nappali</muszak>
+  </beosztas>
+  <beosztas BE-A="04" BE-B="C" BE_ID="6">
+    <muszak>Delutanos</muszak>
+  </beosztas>
+  <beosztas BE-A="05" BE-B="B" BE_ID="7">
+    <muszak>Esti</muszak>
+  </beosztas>
+  <!-- Börtön épületek -->
+  <borton_epulet BOR_ID = "A">
+    <cellak_szama>30</cellak_szama>
+    <kapacitas>120</kapacitas>
+    <epulet_neve>Szecheny borton</epulet_neve>
+  </borton_epulet>
+  <borton_epulet BOR_ID = "B">
+    <cellak_szama>45</cellak_szama>
+    <kapacitas>220</kapacitas>
+    <epulet_neve>Janos borton</epulet_neve>
+  </borton_epulet>
+  <borton_epulet BOR_ID = "C">
+    <cellak_szama>50</cellak_szama>
+    <kapacitas>240</kapacitas>
+    <epulet_neve>Solyom borton</epulet_neve>
+  </borton_epulet>
+<!-- "A" börtön cellái-->
+  <cellak CEL_ID = "a1" C-B="A">
+    <cella_kapacitas>4</cella_kapacitas>
+    <emelet>1</emelet>
+  </cellak>
+  <cellak CEL_ID = "a2" C-B="A">
+    <cella_kapacitas>4</cella_kapacitas>
+    <emelet>1</emelet>
+  </cellak>
+  <cellak CEL_ID = "a3" C-B="A">
+    <cella_kapacitas>2</cella_kapacitas>
+    <emelet>2</emelet>
+  </cellak>
+  <cellak CEL_ID = "a4" C-B="A">
+    <cella_kapacitas>1</cella_kapacitas>
+    <emelet>2</emelet>
+  </cellak>
+  <cellak CEL_ID = "a5" C-B="A">
+    <cella_kapacitas>5</cella_kapacitas>
+    <emelet>2</emelet>
+  </cellak>
+<!-- "B" börtön cellái-->
+  <cellak CEL_ID = "b1" C-B="B">
+    <cella_kapacitas>3</cella_kapacitas>
+    <emelet>1</emelet>
+  </cellak>
+  <cellak CEL_ID = "b2" C-B="B">
+    <cella_kapacitas>3</cella_kapacitas>
+    <emelet>2</emelet>
+  </cellak>
+  <cellak CEL_ID = "b3" C-B="B">
+    <cella_kapacitas>3</cella_kapacitas>
+    <emelet>3</emelet>
+  </cellak>
+  <cellak CEL_ID = "b4" C-B="B">
+    <cella_kapacitas>2</cella_kapacitas>
+    <emelet>3</emelet>
+  </cellak>
+  <cellak CEL_ID = "b5" C-B="B">
+    <cella_kapacitas>5</cella_kapacitas>
+    <emelet>3</emelet>
+  </cellak>
+
+  <!-- "C" börtön cellái-->
+  <cellak CEL_ID = "c1" C-B="C">
+    <cella_kapacitas>4</cella_kapacitas>
+    <emelet>1</emelet>
+  </cellak>
+  <cellak CEL_ID = "c2" C-B="C">
+    <cella_kapacitas>3</cella_kapacitas>
+    <emelet>1</emelet>
+  </cellak>
+  <cellak CEL_ID = "c3" C-B="C">
+    <cella_kapacitas>3</cella_kapacitas>
+    <emelet>1</emelet>
+  </cellak>
+  <cellak CEL_ID = "c4" C-B="C">
+    <cella_kapacitas>4</cella_kapacitas>
+    <emelet>2</emelet>
+  </cellak>
+  <cellak CEL_ID = "c5" C-B="C">
+    <cella_kapacitas>2</cella_kapacitas>
+    <emelet>3</emelet>
+  </cellak>
+  <!-- Rabok cellákra osztva -->
+  <rab RAB_ID = "rab1" R-C="a1">
+    <nev>Gengszter Lajos</nev>
+    <eletkor>38</eletkor>
+    <letoltendo>
+      <kezdet>2000.10.12</kezdet>
+      <veg>2010.10.12</veg>
+    </letoltendo>
+  </rab>
+  <rab RAB_ID = "rab2" R-C="a3">
+    <nev>Bűnöző Ferenc</nev>
+    <eletkor>54</eletkor>
+    <letoltendo>
+      <kezdet>1992.03.22</kezdet>
+      <veg>2003.03.22</veg>
+    </letoltendo>
+  </rab>
+  <rab RAB_ID = "rab3" R-C="b1">
+    <nev>Lopó Benedek</nev>
+    <eletkor>22</eletkor>
+    <letoltendo>
+      <kezdet>2001.06.01</kezdet>
+      <veg>2002.05.15</veg>
+    </letoltendo>
+  </rab>
+  <rab RAB_ID = "rab4" R-C="b2">
+    <nev>Hamiskártyás Ernő</nev>
+    <eletkor>32</eletkor>
+    <letoltendo>
+      <kezdet>2010.01.01</kezdet>
+      <veg>2015.01.01</veg>
+    </letoltendo>
+  </rab>
+  <rab RAB_ID = "rab5" R-C="b2">
+    <nev>Gonosz Gergő</nev>
+    <eletkor>47</eletkor>
+    <letoltendo>
+      <kezdet>2006.04.30</kezdet>
+      <veg>2010.07.15</veg>
+    </letoltendo>
+  </rab>
+  <rab RAB_ID = "rab6" R-C="c1">
+    <nev>Ártatlan Áron</nev>
+    <eletkor>51</eletkor>
+    <letoltendo>
+      <kezdet>1995.10.12</kezdet>
+      <veg>2020.01.01</veg>
+    </letoltendo>
+  </rab>
+</MJ_Borton>

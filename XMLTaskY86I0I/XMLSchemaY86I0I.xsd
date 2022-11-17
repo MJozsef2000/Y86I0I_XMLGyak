@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- Egyszerű típusok -->
+<xs:simpleType name="pozicio_type">
+  <xs:restriction base="xs:string">
+    <xs:minLength value="1"/>
+    <xs:pattern value="([a-zA-Z])*"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="szolgalati_hely_type">
+  <xs:restriction base="xs:string">
+    <xs:minLength value="5"/>
+    <xs:pattern value="([a-z\s*A-Z])*"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="nev_type">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[A-Z][a-zA-Z]*( [A-Z][a-zA-Z]*)*"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="iranyitoszam_type">
+  <xs:restriction base="xs:string">
+    <xs:length value="4"/>
+    <xs:pattern value="([0-9])*"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="hazszam_type">
+  <xs:restriction base="xs:string">
+    <xs:maxLength value="3"/>
+    <xs:pattern value="([0-9])*"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="utca_type">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[A-Z][a-zA-Z]*( [A-Z][a-zA-Z]*)*"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="muszak_type">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Nappali"/>
+    <xs:enumeration value="Delutanos"/>
+    <xs:enumeration value="Esti"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="datum_type">
+  <xs:restriction base="xs:string">
+      <xs:pattern value="(19|20)\d\d.(0[1-9]|1[012]).(0[1-9]|[12][0-9]|3[01])"/>
+  </xs:restriction>
+</xs:simpleType>
+
+  <xs:element name="MJ_Borton">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" name="szemelyzet">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="pozicio" type="pozicio_type" />
+							<xs:element name="szolgalati_hely" type="szolgalati_hely_type" />
+						</xs:sequence>
+						<xs:attribute name="SZ-A" type="xs:unsignedByte" use="required" />
+						<xs:attribute name="SZEM_ID" type="xs:unsignedByte" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element maxOccurs="unbounded" name="alkalmazott">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="eletkor" type="xs:unsignedByte" />
+							<xs:element name="nev" type="nev_type" />
+							<xs:element name="lakhely">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="iranyitoszam" type="iranyitoszam_type" />
+										<xs:element name="hazszam" type="xs:unsignedByte" />
+										<xs:element name="utca" type="utca_type" />
+										<xs:element name="varos" type="xs:string" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="ALK_ID" type="xs:unsignedByte" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element maxOccurs="unbounded" name="beosztas">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="muszak" type="muszak_type" />
+						</xs:sequence>
+						<xs:attribute name="BE-A" type="xs:unsignedByte" use="required" />
+						<xs:attribute name="BE-B" type="xs:string" use="required" />
+            <xs:attribute name="BE_ID" type="xs:string" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element maxOccurs="unbounded" name="borton_epulet">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="cellak_szama" type="xs:unsignedByte" />
+							<xs:element name="kapacitas" type="xs:unsignedByte" />
+							<xs:element name="epulet_neve" type="xs:string" />
+						</xs:sequence>
+						<xs:attribute name="BOR_ID" type="xs:string" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element maxOccurs="unbounded" name="cellak">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="cella_kapacitas" type="xs:unsignedByte" />
+							<xs:element name="emelet" type="xs:unsignedByte" />
+						</xs:sequence>
+						<xs:attribute name="CEL_ID" type="xs:string" use="required" />
+						<xs:attribute name="C-B" type="xs:string" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element maxOccurs="unbounded" name="rab">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nev" type="xs:string" />
+							<xs:element name="eletkor" type="xs:unsignedByte" />
+							<xs:element name="letoltendo">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="kezdet" type="datum_type" />
+										<xs:element name="veg" type="datum_type" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="RAB_ID" type="xs:string" use="required" />
+						<xs:attribute name="R-C" type="xs:string" use="required" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+    <!-- Elsődleges kulcsok -->
+    <xs:key name="szem_id">
+      <xs:selector xpath="szemelyzet" />
+      <xs:field xpath="@SZEM_ID" />
+    </xs:key>
+    <xs:key name="alk_id">
+      <xs:selector xpath="alkalmazott" />
+      <xs:field xpath="@ALK_ID" />
+    </xs:key>
+    <xs:key name="be_id">
+      <xs:selector xpath="beosztas" />
+      <xs:field xpath="@BE_ID" />
+    </xs:key>
+    <xs:key name="bor_id">
+      <xs:selector xpath="borton_epulet" />
+      <xs:field xpath="@BOR_ID" />
+    </xs:key>
+    <xs:key name="cel_id">
+      <xs:selector xpath="cellak" />
+      <xs:field xpath="@CEL_ID" />
+    </xs:key>
+    <xs:key name="rab_id">
+      <xs:selector xpath="rab" />
+      <xs:field xpath="@RAB_ID" />
+    </xs:key>
+
+    <!-- Idegen kulcsok -->
+    <xs:keyref refer="alk_id" name="alkalmazott_szemelyzet_idegen_kulcs">
+            <xs:selector xpath="szemelyzet" />
+            <xs:field xpath="@SZ-A" />
+    </xs:keyref>
+    <xs:keyref refer="alk_id" name="alkalmazott_idegen_kulcs">
+            <xs:selector xpath="beosztas" />
+            <xs:field xpath="@BE-A" />
+    </xs:keyref>
+    <xs:keyref refer="bor_id" name="borton_idegen_kulcs">
+            <xs:selector xpath="beosztas" />
+            <xs:field xpath="@BE-B" />
+    </xs:keyref>
+    <xs:keyref refer="bor_id" name="borton_cella_idegen_kulcs">
+            <xs:selector xpath="cellak" />
+            <xs:field xpath="@C-B" />
+    </xs:keyref>
+    <xs:keyref refer="cel_id" name="cella_rab_idegen_kulcs">
+            <xs:selector xpath="rab" />
+            <xs:field xpath="@R-C" />
+    </xs:keyref>
+	</xs:element>
+
+
+</xs:schema>
