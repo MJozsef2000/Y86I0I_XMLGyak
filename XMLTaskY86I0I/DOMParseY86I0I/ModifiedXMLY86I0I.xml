@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<MJ_Borton xmlns="DOMY86I0I">
+  <borton_epulet BOR_ID="D">
+    <cellak_szama>30</cellak_szama>
+    <kapacitas>240</kapacitas>
+    <epulet_neve>Proba borton 1</epulet_neve>
+  </borton_epulet>
+  <borton_epulet BOR_ID="E">
+    <cellak_szama>20</cellak_szama>
+    <kapacitas>340</kapacitas>
+    <epulet_neve>Proba borton 2</epulet_neve>
+  </borton_epulet>
+  <borton_epulet BOR_ID="F">
+    <cellak_szama>10</cellak_szama>
+    <kapacitas>120</kapacitas>
+    <epulet_neve>Proba borton 3</epulet_neve>
+  </borton_epulet>
+</MJ_Borton>
