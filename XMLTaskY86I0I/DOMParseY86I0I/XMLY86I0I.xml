@@ -6,22 +6,27 @@ xsi:noNamespaceSchemaLocation="XMLSchemaY86I0I.xsd">
   <szemelyzet SZ-A="01" SZEM_ID="100">
     <pozicio>Takarito</pozicio>
     <szolgalati_hely>Folyosok</szolgalati_hely>
+    <csaladi_allapot>Házas</csaladi_allapot>
   </szemelyzet>
   <szemelyzet SZ-A="02" SZEM_ID="101">
     <pozicio>Szakacs</pozicio>
     <szolgalati_hely>Konyha</szolgalati_hely>
+    <csaladi_allapot>Egyedülálló</csaladi_allapot>
   </szemelyzet>
   <szemelyzet SZ-A="03" SZEM_ID="102">
     <pozicio>Bortonor</pozicio>
     <szolgalati_hely>Borton epuletek</szolgalati_hely>
+    <csaladi_allapot>Elvált</csaladi_allapot>
   </szemelyzet>
   <szemelyzet SZ-A="04" SZEM_ID="103">
     <pozicio>Sofor</pozicio>
     <szolgalati_hely>Kocsibejaro</szolgalati_hely>
+    <csaladi_allapot>Egyedülálló</csaladi_allapot>
   </szemelyzet>
   <szemelyzet SZ-A="05" SZEM_ID="104">
     <pozicio>Orvos</pozicio>
     <szolgalati_hely>Borton korhaz</szolgalati_hely>
+    <csaladi_allapot>Házas</csaladi_allapot>
   </szemelyzet>
 
 <!-- Alkalmazottak általános adatai -->
@@ -102,80 +107,98 @@ xsi:noNamespaceSchemaLocation="XMLSchemaY86I0I.xsd">
     <cellak_szama>30</cellak_szama>
     <kapacitas>120</kapacitas>
     <epulet_neve>Szecheny borton</epulet_neve>
+    <epites>Újépítésű Tégla</epites>
   </borton_epulet>
   <borton_epulet BOR_ID = "B">
     <cellak_szama>45</cellak_szama>
     <kapacitas>220</kapacitas>
     <epulet_neve>Janos borton</epulet_neve>
+    <epites>Újépítésű Beton</epites>
   </borton_epulet>
   <borton_epulet BOR_ID = "C">
     <cellak_szama>50</cellak_szama>
     <kapacitas>240</kapacitas>
     <epulet_neve>Solyom borton</epulet_neve>
+    <epites>Régi Tégla</epites>
   </borton_epulet>
 <!-- "A" börtön cellái-->
   <cellak CEL_ID = "a1" C-B="A">
     <cella_kapacitas>4</cella_kapacitas>
     <emelet>1</emelet>
+    <ablak>Van</ablak>
   </cellak>
   <cellak CEL_ID = "a2" C-B="A">
     <cella_kapacitas>4</cella_kapacitas>
     <emelet>1</emelet>
+    <ablak>Van</ablak>
   </cellak>
   <cellak CEL_ID = "a3" C-B="A">
     <cella_kapacitas>2</cella_kapacitas>
     <emelet>2</emelet>
+    <ablak>Van</ablak>
   </cellak>
   <cellak CEL_ID = "a4" C-B="A">
     <cella_kapacitas>1</cella_kapacitas>
     <emelet>2</emelet>
+    <ablak>Nincs</ablak>
   </cellak>
   <cellak CEL_ID = "a5" C-B="A">
     <cella_kapacitas>5</cella_kapacitas>
     <emelet>2</emelet>
+    <ablak>Van</ablak>
   </cellak>
 <!-- "B" börtön cellái-->
   <cellak CEL_ID = "b1" C-B="B">
     <cella_kapacitas>3</cella_kapacitas>
     <emelet>1</emelet>
+    <ablak>Nincs</ablak>
   </cellak>
   <cellak CEL_ID = "b2" C-B="B">
     <cella_kapacitas>3</cella_kapacitas>
     <emelet>2</emelet>
+    <ablak>Van</ablak>
   </cellak>
   <cellak CEL_ID = "b3" C-B="B">
     <cella_kapacitas>3</cella_kapacitas>
     <emelet>3</emelet>
+    <ablak>Van</ablak>
   </cellak>
   <cellak CEL_ID = "b4" C-B="B">
     <cella_kapacitas>2</cella_kapacitas>
     <emelet>3</emelet>
+    <ablak>Van</ablak>
   </cellak>
   <cellak CEL_ID = "b5" C-B="B">
     <cella_kapacitas>5</cella_kapacitas>
     <emelet>3</emelet>
+    <ablak>Nincs</ablak>
   </cellak>
 
   <!-- "C" börtön cellái-->
   <cellak CEL_ID = "c1" C-B="C">
     <cella_kapacitas>4</cella_kapacitas>
     <emelet>1</emelet>
+    <ablak>Van</ablak>
   </cellak>
   <cellak CEL_ID = "c2" C-B="C">
     <cella_kapacitas>3</cella_kapacitas>
     <emelet>1</emelet>
+    <ablak>Nincs</ablak>
   </cellak>
   <cellak CEL_ID = "c3" C-B="C">
     <cella_kapacitas>3</cella_kapacitas>
     <emelet>1</emelet>
+    <ablak>Van</ablak>
   </cellak>
   <cellak CEL_ID = "c4" C-B="C">
     <cella_kapacitas>4</cella_kapacitas>
     <emelet>2</emelet>
+    <ablak>Van</ablak>
   </cellak>
   <cellak CEL_ID = "c5" C-B="C">
     <cella_kapacitas>2</cella_kapacitas>
     <emelet>3</emelet>
+    <ablak>Van</ablak>
   </cellak>
   <!-- Rabok cellákra osztva -->
   <rab RAB_ID = "rab1" R-C="a1">
