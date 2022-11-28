@@ -173,30 +173,30 @@
 			</xs:sequence>
 		</xs:complexType>
     <!-- Elsődleges kulcsok -->
-    <xs:key name="szem_id">
+    <xs:unique name="szem_id">
       <xs:selector xpath="szemelyzet" />
       <xs:field xpath="@SZEM_ID" />
-    </xs:key>
-    <xs:key name="alk_id">
+    </xs:unique>
+    <xs:unique name="alk_id">
       <xs:selector xpath="alkalmazott" />
       <xs:field xpath="@ALK_ID" />
-    </xs:key>
-    <xs:key name="be_id">
+    </xs:unique>
+    <xs:unique name="be_id">
       <xs:selector xpath="beosztas" />
       <xs:field xpath="@BE_ID" />
-    </xs:key>
-    <xs:key name="bor_id">
+    </xs:unique>
+    <xs:unique name="bor_id">
       <xs:selector xpath="borton_epulet" />
       <xs:field xpath="@BOR_ID" />
-    </xs:key>
-    <xs:key name="cel_id">
+    </xs:unique>
+    <xs:unique name="cel_id">
       <xs:selector xpath="cellak" />
       <xs:field xpath="@CEL_ID" />
-    </xs:key>
-    <xs:key name="rab_id">
+    </xs:unique>
+    <xs:unique name="rab_id">
       <xs:selector xpath="rab" />
       <xs:field xpath="@RAB_ID" />
-    </xs:key>
+    </xs:unique>
 
     <!-- Idegen kulcsok -->
     <xs:keyref refer="alk_id" name="alkalmazott_szemelyzet_idegen_kulcs">
