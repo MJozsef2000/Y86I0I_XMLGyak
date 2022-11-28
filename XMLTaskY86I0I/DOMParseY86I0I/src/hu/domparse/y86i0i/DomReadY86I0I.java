@@ -15,13 +15,14 @@ public class DomReadY86I0I {
 	public static void main(String argv[]) throws SAXException, IOException, ParserConfigurationException {
 		//XML File opening
 		String[] szemelyzet_fields = {
-			"pozicio",
-			"szolgalati_hely"
+				"pozicio",
+				"szolgalati_hely",
+				"csaladi_allapot"
 		};
 		String[] alkalmazott_fields = {
-			"eletkor",
-			"nev",
-			"lakhely"
+				"eletkor",
+				"nev",
+				"lakhely"
 		};
 		String[] beosztas_fields = {
 				"muszak"
@@ -29,11 +30,13 @@ public class DomReadY86I0I {
 		String[] borton_epulet_fields = {
 				"cellak_szama",
 				"kapacitas",
-				"epulet_neve"
+				"epulet_neve",
+				"epites"
 			};
 		String[] cellak_fields = {
 				"cella_kapacitas",
-				"emelet"
+				"emelet",
+				"ablak"
 			};
 		String[] rab_fields = {
 				"nev",
