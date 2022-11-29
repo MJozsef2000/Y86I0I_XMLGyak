@@ -16,7 +16,8 @@ public class DomQueryY86I0I {
 		String[] borton_epulet_fields = {
 				"cellak_szama",
 				"kapacitas",
-				"epulet_neve"
+				"epulet_neve",
+				"epites"
 			};
 		String[] rab_fields = {
 				"nev",
@@ -25,7 +26,8 @@ public class DomQueryY86I0I {
 			};
 		String[] cellak_fields = {
 				"cella_kapacitas",
-				"emelet"
+				"emelet",
+				"ablak"
 			};
 		File xmlFile = new File("XMLY86I0I.xml");
 		
@@ -37,7 +39,7 @@ public class DomQueryY86I0I {
 		Document doc = dBuilder.parse(xmlFile);
 		
 		doc.getDocumentElement().normalize();
-		System.out.println("---A borton epulet mezokbol kerdezznuk le, megkotesek alapjan---");
+		System.out.println("---Nem kerjuk az A epulet mezoit!---");
 		//A börtön épület mezőkből kérdezünk le, megkötések alapján
 			NodeList nList = doc.getElementsByTagName("borton_epulet");	
 			for (int i=0; i<nList.getLength(); i++){
