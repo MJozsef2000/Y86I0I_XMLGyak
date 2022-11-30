@@ -1,0 +1,59 @@
+{
+    "vizsgak":[
+            {
+                "kurzus": "Szamitegepes Grafika",
+                "helyszin": "III.E",
+                "idopont": {
+                    "nap": "Hetfo",
+                    "tol": "9:00",
+                    "ig": "12:00"
+                },
+                "oktato": "Dr. Juhasz Imre",
+                "jegy": 5
+            },
+            {
+                "kurzus": "Numerikus Analizis",
+                "helyszin": "210",
+                "idopont": {
+                    "nap": "Kedd",
+                    "tol": "10:00",
+                    "ig": "12:00"
+                },
+                "oktato": "Dr. Karacsony Zsolt",
+                "jegy": 5
+            },
+            {
+                "kurzus": "Parhuzamos Algoritmusok",
+                "helyszin": "XXII.E",
+                "idopont": {
+                    "nap": "Csuturtok",
+                    "tol": "14:00",
+                    "ig": "16:00"
+                },
+                "oktato": "Piller Imre",
+                "jegy": 5
+            },
+            {
+                "kurzus": "Automatak es Formalis Nyelvek",
+                "helyszin": "XXXII.E",
+                "idopont": {
+                    "nap": "Kedd",
+                    "tol": "8:00",
+                    "ig": "10:00"
+                },
+                "oktato": "Dr. Radaleczki Sandor",
+                "jegy": 4
+            },
+            {
+                "kurzus": "Optimalizalas",
+                "helyszin": "XXXVII.E",
+                "idopont": {
+                    "nap": "Szerda",
+                    "tol": "10:00",
+                    "ig": "12:00"
+                },
+                "oktato": "Dr. Korei Attila",
+                "jegy": 2
+            }
+        ]
+}

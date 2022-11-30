@@ -1,0 +1,25 @@
+oktato : Dr. Juhasz Imre
+idopont : {"tol":"9:00","nap":"Hetfo","ig":"12:00"}
+kurzus : Szamitegepes Grafika
+helyszin : III.E
+jegy : 5
+oktato : Dr. Karacsony Zsolt
+idopont : {"tol":"10:00","nap":"Kedd","ig":"12:00"}
+kurzus : Numerikus Analizis
+helyszin : 210
+jegy : 5
+oktato : Piller Imre
+idopont : {"tol":"14:00","nap":"Csuturtok","ig":"16:00"}
+kurzus : Parhuzamos Algoritmusok
+helyszin : XXII.E
+jegy : 5
+oktato : Dr. Radaleczki Sandor
+idopont : {"tol":"8:00","nap":"Kedd","ig":"10:00"}
+kurzus : Automatak es Formalis Nyelvek
+helyszin : XXXII.E
+jegy : 4
+oktato : Dr. Korei Attila
+idopont : {"tol":"10:00","nap":"Szerda","ig":"12:00"}
+kurzus : Optimalizalas
+helyszin : XXXVII.E
+jegy : 2
