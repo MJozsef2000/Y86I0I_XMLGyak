@@ -97,11 +97,9 @@ public class DOMModifyY86I0I {
 
         String id = cella.getAttributes().getNamedItem("CEL_ID").getTextContent();
 
-        // Létrehozza az új "honap" elemet
         Element wc = doc.createElement("van_wc");
         cella.appendChild(wc);
 
-        // Az "id" értéke alapján ad értéket az új "honap" elemnek
         if (id.contains("a")) {
           wc.appendChild(doc.createTextNode("Van"));
         }
