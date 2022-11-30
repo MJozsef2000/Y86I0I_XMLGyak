@@ -15,7 +15,7 @@
         <xs:enumeration value="Újépítésű Tégla" />
         <xs:enumeration value="Újépítésű Beton" />
         <xs:enumeration value="Régi Tégla" />
-				<xs:enumeration value="Régi Beton" />
+	<xs:enumeration value="Régi Beton" />
     </xs:restriction>
 </xs:simpleType>
 
@@ -29,7 +29,7 @@
     <xs:restriction base="xs:byte">
         <xs:enumeration value="1" />
         <xs:enumeration value="2" />
-				<xs:enumeration value="3" />
+	<xs:enumeration value="3" />
     </xs:restriction>
 </xs:simpleType>
 
@@ -87,91 +87,93 @@
   </xs:restriction>
 </xs:simpleType>
 
-  <xs:element name="MJ_Borton">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element maxOccurs="unbounded" name="szemelyzet">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="pozicio" type="pozicio_type" />
-							<xs:element name="szolgalati_hely" type="szolgalati_hely_type" />
-							<xs:element name="csaladi_allapot" type="csaladi_allapot_type" />
-						</xs:sequence>
-						<xs:attribute name="SZ-A" type="xs:unsignedByte" use="required" />
-						<xs:attribute name="SZEM_ID" type="xs:unsignedByte" use="required" />
-					</xs:complexType>
-				</xs:element>
-				<xs:element maxOccurs="unbounded" name="alkalmazott">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="eletkor" type="xs:unsignedByte" />
-							<xs:element name="nev" type="nev_type" />
-							<xs:element name="lakhely">
-								<xs:complexType>
-									<xs:sequence>
-										<xs:element name="iranyitoszam" type="iranyitoszam_type" />
-										<xs:element name="hazszam" type="xs:unsignedByte" />
-										<xs:element name="utca" type="utca_type" />
-										<xs:element name="varos" type="xs:string" />
-									</xs:sequence>
-								</xs:complexType>
-							</xs:element>
-						</xs:sequence>
-						<xs:attribute name="ALK_ID" type="xs:unsignedByte" use="required" />
-					</xs:complexType>
-				</xs:element>
-				<xs:element maxOccurs="unbounded" name="beosztas">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="muszak" type="muszak_type" />
-						</xs:sequence>
-						<xs:attribute name="BE-A" type="xs:unsignedByte" use="required" />
-						<xs:attribute name="BE-B" type="xs:string" use="required" />
-            <xs:attribute name="BE_ID" type="xs:string" use="required" />
-					</xs:complexType>
-				</xs:element>
-				<xs:element maxOccurs="unbounded" name="borton_epulet">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="cellak_szama" type="xs:unsignedByte" />
-							<xs:element name="kapacitas" type="xs:unsignedByte" />
-							<xs:element name="epulet_neve" type="xs:string" />
-							<xs:element name="epites" type="epites_type" />
-						</xs:sequence>
-						<xs:attribute name="BOR_ID" type="xs:string" use="required" />
-					</xs:complexType>
-				</xs:element>
-				<xs:element maxOccurs="unbounded" name="cellak">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="cella_kapacitas" type="xs:unsignedByte" />
-							<xs:element name="emelet" type="emelet_type" />
-							<xs:element name="ablak" type="ablak_type" />
-						</xs:sequence>
-						<xs:attribute name="CEL_ID" type="xs:string" use="required" />
-						<xs:attribute name="C-B" type="xs:string" use="required" />
-					</xs:complexType>
-				</xs:element>
-				<xs:element maxOccurs="unbounded" name="rab">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="nev" type="xs:string" />
-							<xs:element name="eletkor" type="xs:unsignedByte" />
-							<xs:element name="letoltendo">
-								<xs:complexType>
-									<xs:sequence>
-										<xs:element name="kezdet" type="datum_type" />
-										<xs:element name="veg" type="datum_type" />
-									</xs:sequence>
-								</xs:complexType>
-							</xs:element>
-						</xs:sequence>
-						<xs:attribute name="RAB_ID" type="xs:string" use="required" />
-						<xs:attribute name="R-C" type="xs:string" use="required" />
-					</xs:complexType>
-				</xs:element>
-			</xs:sequence>
-		</xs:complexType>
+<xs:element name="MJ_Borton">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" name="szemelyzet">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="pozicio" type="pozicio_type" />
+						<xs:element name="szolgalati_hely" type="szolgalati_hely_type" />
+						<xs:element name="csaladi_allapot" type="csaladi_allapot_type" />
+					</xs:sequence>
+					<xs:attribute name="SZ-A" type="xs:unsignedByte" use="required" />
+					<xs:attribute name="SZEM_ID" type="xs:unsignedByte" use="required" />
+				</xs:complexType>
+			</xs:element>
+			<xs:element maxOccurs="unbounded" name="alkalmazott">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="eletkor" type="xs:unsignedByte" />
+						<xs:element name="nev" type="nev_type" />
+						<xs:element name="lakhely">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="iranyitoszam" type="iranyitoszam_type" />
+									<xs:element name="hazszam" type="xs:unsignedByte" />
+									<xs:element name="utca" type="utca_type" />
+									<xs:element name="varos" type="xs:string" />
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="ALK_ID" type="xs:unsignedByte" use="required" />
+				</xs:complexType>
+			</xs:element>
+			<xs:element maxOccurs="unbounded" name="beosztas">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="muszak" type="muszak_type" />
+					</xs:sequence>
+					<xs:attribute name="BE-A" type="xs:unsignedByte" use="required" />
+					<xs:attribute name="BE-B" type="xs:string" use="required" />
+           				<xs:attribute name="BE_ID" type="xs:string" use="required" />
+				</xs:complexType>
+			</xs:element>
+			
+			<xs:element maxOccurs="unbounded" name="borton_epulet">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="cellak_szama" type="xs:unsignedByte" />
+						<xs:element name="kapacitas" type="xs:unsignedByte" />
+						<xs:element name="epulet_neve" type="xs:string" />
+						<xs:element name="epites" type="epites_type" />
+					</xs:sequence>
+					<xs:attribute name="BOR_ID" type="xs:string" use="required" />
+				</xs:complexType>
+			</xs:element>
+			
+			<xs:element maxOccurs="unbounded" name="cellak">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="cella_kapacitas" type="xs:unsignedByte" />
+						<xs:element name="emelet" type="emelet_type" />
+						<xs:element name="ablak" type="ablak_type" />
+					</xs:sequence>
+					<xs:attribute name="CEL_ID" type="xs:string" use="required" />
+					<xs:attribute name="C-B" type="xs:string" use="required" />
+				</xs:complexType>
+			</xs:element>
+			<xs:element maxOccurs="unbounded" name="rab">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="nev" type="xs:string" />
+						<xs:element name="eletkor" type="xs:unsignedByte" />
+						<xs:element name="letoltendo">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="kezdet" type="datum_type" />
+									<xs:element name="veg" type="datum_type" />
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="RAB_ID" type="xs:string" use="required" />
+					<xs:attribute name="R-C" type="xs:string" use="required" />
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
     <!-- Elsődleges kulcsok -->
     <xs:unique name="szem_id">
       <xs:selector xpath="szemelyzet" />
@@ -219,7 +221,7 @@
             <xs:selector xpath="rab" />
             <xs:field xpath="@R-C" />
     </xs:keyref>
-	</xs:element>
+</xs:element>
 
 
 </xs:schema>
